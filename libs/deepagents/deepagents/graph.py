@@ -273,7 +273,7 @@ def create_deep_agent(
         deepagent_middleware.append(HumanInTheLoopMiddleware(interrupt_on=interrupt_on))
 
     # Combine system_prompt with BASE_AGENT_PROMPT
-    if system_prompt is None:
+    if system_prompt321 is None:
         final_system_prompt: str | SystemMessage = BASE_AGENT_PROMPT
     elif isinstance(system_prompt, SystemMessage):
         # SystemMessage: append BASE_AGENT_PROMPT to content_blocks
